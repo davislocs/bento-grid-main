@@ -1,0 +1,57 @@
+@use '../sass/variables' as *;
+
+h1 {
+    font-family: $ff-secondary;
+    font-size: map-get($fs, fs-xl);
+    font-weight: $fw-bold;
+    line-height: 1;
+    color: map-get($clr, neutral-100);
+}
+
+p {
+    font-family: $ff-primary;
+    font-size: map-get($fs , fs-m);
+    color: map-get($clr, neutral-600);
+    // line-height: 1.64;
+}
+
+.ff-secondary {
+    font-family: $ff-secondary;
+}
+
+.fw-bold {
+    font-weight: $fw-bold;
+}
+
+.fs-xs {
+    font-size: map-get($fs, fs-xs);
+}
+
+.fs-s {
+    font-size: map-get($fs, fs-s);
+}
+
+.fs-xl {
+    font-size: map-get($fs, fs-xl);
+}
+
+.clr-primary {
+    color: map-get($clr, primary);
+}
+
+.clr-secondary {
+    color: map-get($clr, secondary);
+}
+
+.clr-accent-400 {
+    color: map-get($clr, accent-400);
+}
+
+.clr-neutral-100 {
+    color: map-get($clr, neutral-100);
+}
+
+.clr-neutral-900 {
+    color: map-get($clr, neutral-900);
+}
+
