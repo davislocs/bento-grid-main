@@ -1,38 +1,29 @@
 @use '../sass/variables' as *;
 
-h1 {
-    font-family: $ff-secondary;
-    font-size: map-get($fs, fs-xl);
+.font-preset-1 {
+    font-size: map-get($fs, fs-xxl);
     font-weight: $fw-bold;
-    line-height: 1;
-    color: map-get($clr, neutral-100);
+    line-height: 0.89;
+    letter-spacing: -.216rem;
 }
 
-p {
-    font-family: $ff-primary;
+.font-preset-2 {
+    font-size: map-get($fs , fs-l);
+    font-weight: $fw-bold;
+    line-height: 0.93;
+    letter-spacing: -.168rem;
+}
+
+.font-preset-3 {
     font-size: map-get($fs , fs-m);
-    color: map-get($clr, neutral-600);
-    // line-height: 1.64;
+    line-height: 1.11;
 }
 
-.ff-secondary {
-    font-family: $ff-secondary;
-}
-
-.fw-bold {
+.font-preset-4 {
+    font-size: map-get($fs , fs-xl);
     font-weight: $fw-bold;
-}
-
-.fs-xs {
-    font-size: map-get($fs, fs-xs);
-}
-
-.fs-s {
-    font-size: map-get($fs, fs-s);
-}
-
-.fs-xl {
-    font-size: map-get($fs, fs-xl);
+    line-height: 0.83;
+    letter-spacing: -.216rem;
 }
 
 .clr-primary {
@@ -43,15 +34,19 @@ p {
     color: map-get($clr, secondary);
 }
 
-.clr-accent-400 {
-    color: map-get($clr, accent-400);
+.clr-accent-150 {
+    color: map-get($clr, neutral-150);
 }
 
-.clr-neutral-100 {
-    color: map-get($clr, neutral-100);
+.clr-neutral-800 {
+    color: map-get($clr, neutral-800);
 }
 
 .clr-neutral-900 {
     color: map-get($clr, neutral-900);
+}
+
+.clr-neutral-1000 {
+    color: map-get($clr, neutral-1000);
 }
 

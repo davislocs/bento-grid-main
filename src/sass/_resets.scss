@@ -12,9 +12,9 @@ body, html{
 
 html{
     font-size: 62.5%;
-    font-weight: 400;
+    font-weight: $fw-regular;
     font-family: $ff-primary;
-    color: map-get($clr, neutral-600);
+    color: map.get($clr, neutral-150);
 }
 
 button{

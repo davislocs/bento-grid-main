@@ -1,1 +1,13 @@
 @use '../sass/index' as *;
+
+.main-page {
+    display: grid;
+    // align-items: center;
+    justify-content: center;
+    grid-template-columns: 37.22rem;
+    row-gap: 3.2rem;
+}
+
+body{
+    background-color: blue;
+}

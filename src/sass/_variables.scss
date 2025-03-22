@@ -1,26 +1,28 @@
+@use "sass:map";
+
 //font colors
 $clr: (
-    "primary": hsla(158, 36%, 37%, 1),
-    "secondary": hsl(0, 0%, 100%, 1),
-    "accent-400": hsl(158, 42%, 18%, 1),
-    "neutral-100": hsl(212, 21%, 14%, 1),
-    "neutral-600": hsl(228, 12%, 48%, 1),
-    "neutral-900": hsl(30, 38%, 92%, 1)
+    "primary": hsla(256, 67%, 59%, 1),
+    "secondary": hsla(39, 100%, 71%, 1),
+    "neutral-150": hsla(0, 0%, 7%, 1),
+    "neutral-800": hsla(254, 88%, 90%, 1),
+    "neutral-900": hsla(31, 66%, 93%, 1),
+    "neutral-1000": hsla(0, 0%, 100%, 1)
 );
 //font sizes
 $fs: (
-    "fs-xs": 1.2rem, 
-    "fs-s": 1.3rem,
-    "fs-m": 1.4rem,
-    "fs-xl": 3.2rem
+    "fs-m": 1.8rem,
+    "fs-l": 2.8rem,
+    "fs-xl": 3.6rem,
+    "fs-xxl": 5.4rem
 );
 //Screen break points//
 $brakepoint-desktop: 600px;
 $brakepoint-mobile: 375px;
 
 //font weights
-$fw-regular: 500;
-$fw-bold: 700;
+$fw-regular: 400;
+$fw-bold: 500;
 
-$ff-primary: "Montserrat", "sans-serif";
-$ff-secondary: "Fraunces", "sans-serif";
+$ff-primary: "DM Sans", "sans-serif";
+// $ff-secondary: "DM Sans","sans-serif";
