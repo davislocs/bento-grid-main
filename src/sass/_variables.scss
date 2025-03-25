@@ -1,5 +1,3 @@
-@use "sass:map";
-
 //font colors
 $clr: (
     "primary": hsla(256, 67%, 59%, 1),
@@ -7,18 +5,31 @@ $clr: (
     "neutral-150": hsla(0, 0%, 7%, 1),
     "neutral-800": hsla(254, 88%, 90%, 1),
     "neutral-900": hsla(31, 66%, 93%, 1),
+    "neutral-950": hsl(300, 5%, 96%, 1),
     "neutral-1000": hsla(0, 0%, 100%, 1)
 );
+
 //font sizes
 $fs: (
     "fs-m": 1.8rem,
-    "fs-l": 2.8rem,
-    "fs-xl": 3.6rem,
-    "fs-xxl": 5.4rem
+    "fs-l": 2.6rem,
+    "fs-xl": 3.2rem,
+    "fs-xxl": 4.6rem,
+
+    "fs-m-tab": 1.8rem,
+    "fs-l-tab": 2.8rem,
+    "fs-xl-tab": 3.6rem,
+    "fs-xxl-tab": 5.4rem,
+
+    "fs-m-desk": 1.8rem,
+    "fs-l-desk": 3.2rem,
+    "fs-xl-desk": 4rem,
+    "fs-xxl-desk": 6.2rem,
 );
+
 //Screen break points//
-$brakepoint-desktop: 600px;
-$brakepoint-mobile: 375px;
+$brakepoint-desktop: 1160px;
+$brakepoint-tablet: 660px;
 
 //font weights
 $fw-regular: 400;

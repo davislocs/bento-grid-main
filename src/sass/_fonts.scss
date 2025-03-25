@@ -1,52 +1,104 @@
 @use '../sass/variables' as *;
+@use '../sass/mixins' as *;
+@use "sass:map";
 
 .font-preset-1 {
-    font-size: map-get($fs, fs-xxl);
+    font-size: map.get($fs, fs-xxl);
     font-weight: $fw-bold;
-    line-height: 0.89;
-    letter-spacing: -.216rem;
+    line-height: 0.91;
+    letter-spacing: -.184rem;
+
+    @include screanSize($brakepoint-tablet) {
+        font-size: map.get($fs, fs-xxl-tab);
+        line-height: 0.89;
+        letter-spacing: -.216rem;
+    }
+
+    @include screanSize($brakepoint-desktop) {
+        font-size: map.get($fs, fs-xxl-desk);
+        line-height: 0.94;
+        letter-spacing: -.3rem;
+    }
 }
 
 .font-preset-2 {
-    font-size: map-get($fs , fs-l);
+    font-size: map.get($fs , fs-l);
     font-weight: $fw-bold;
-    line-height: 0.93;
-    letter-spacing: -.168rem;
+    line-height: 0.92;
+    letter-spacing: -.156rem;
+
+    @include screanSize($brakepoint-tablet) {
+        font-size: map.get($fs, fs-l-tab);
+        line-height: 0.93;
+        letter-spacing: -.168rem;
+    }
+
+    @include screanSize($brakepoint-desktop) {
+        font-size: map.get($fs, fs-l-desk);
+        line-height: 0.88;
+        letter-spacing: -.2rem;
+    }
 }
 
 .font-preset-3 {
-    font-size: map-get($fs , fs-m);
+    font-size: map.get($fs , fs-m);
     line-height: 1.11;
+
+    @include screanSize($brakepoint-tablet) {
+        font-size: map.get($fs, fs-m-tab);
+        line-height: 1.11;
+    }
+
+    @include screanSize($brakepoint-desktop) {
+        font-size: map.get($fs, fs-m-desk);
+        line-height: 1.11;
+    }
 }
 
 .font-preset-4 {
-    font-size: map-get($fs , fs-xl);
+    font-size: map.get($fs , fs-xl);
     font-weight: $fw-bold;
-    line-height: 0.83;
-    letter-spacing: -.216rem;
+    line-height: 0.88;
+    letter-spacing: -.192rem;
+
+    @include screanSize($brakepoint-tablet) {
+        font-size: map.get($fs, fs-xl-tab);
+        line-height: 0.83;
+        letter-spacing: -.216rem;
+    }
+
+    @include screanSize($brakepoint-desktop) {
+        font-size: map.get($fs, fs-xl-desk);
+        line-height: 0.9;
+        letter-spacing: -.2rem;
+    }
 }
 
 .clr-primary {
-    color: map-get($clr, primary);
+    color: map.get($clr, primary);
 }
 
 .clr-secondary {
-    color: map-get($clr, secondary);
+    color: map.get($clr, secondary);
 }
 
 .clr-accent-150 {
-    color: map-get($clr, neutral-150);
+    color: map.get($clr, neutral-150);
 }
 
 .clr-neutral-800 {
-    color: map-get($clr, neutral-800);
+    color: map.get($clr, neutral-800);
 }
 
 .clr-neutral-900 {
-    color: map-get($clr, neutral-900);
+    color: map.get($clr, neutral-900);
 }
 
 .clr-neutral-1000 {
-    color: map-get($clr, neutral-1000);
+    color: map.get($clr, neutral-1000);
+}
+
+.f-style-italic {
+    font-style: italic;
 }
 

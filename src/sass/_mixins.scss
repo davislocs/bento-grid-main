@@ -1,9 +1,8 @@
-
-@mixin flexCenter($direction, $aligne: center) {
+@mixin flexCenter($direction, $align: center) {
     display: flex;
     flex-direction: $direction;
     justify-content: center;
-    align-items: $aligne;
+    align-items: $align;
 }
 
 @mixin screanSize($width) {
